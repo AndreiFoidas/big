@@ -3,25 +3,12 @@
   <descriptionCdata><![CDATA[572ea18f-d7d0-4c3b-999b-b44053ac94bf.3ddcd715-076f-445c-858f-1e4f5083395a.callout=hello, world\!
 572ea18f-d7d0-4c3b-999b-b44053ac94bf.a1dbabe2-7b94-4e15-8000-4c312bff7589.callout=how are you? \uD83D\uDCA9
 572ea18f-d7d0-4c3b-999b-b44053ac94bf.bae682fc-9672-4c46-b894-0f47e5d3aa3d.description=<pre>Generates a random number.\n\nInputs\:\nmax - The maximum number that can be returned.\nmin - The minimum number that can be returned.\n\nResponses\:\nsuccess - The operation completed Successfully.\nfailure - Something went wrong.\n\nReturns\:\nA random number between max and min (inclusive)</pre>
-572ea18f-d7d0-4c3b-999b-b44053ac94bf.cfad8cf6-a608-4d6c-92de-061d8b844c06.prompt=choose wisely]]></descriptionCdata>
-  <annotation/>
+572ea18f-d7d0-4c3b-999b-b44053ac94bf.cfad8cf6-a608-4d6c-92de-061d8b844c06.prompt=choose wisely
+]]></descriptionCdata>
+  <annotation></annotation>
   <name>r01</name>
   <categories/>
-  <inputs>
-    <staticBinding id="7bf15196-1026-450d-b97a-86ef9df9827a">
-      <annotation></annotation>
-      <inputSymbol>input_0</inputSymbol>
-      <isList>false</isList>
-      <assignFromContext>false</assignFromContext>
-      <assignToContext>false</assignToContext>
-      <inputType>STRING</inputType>
-      <required>false</required>
-      <isPersisted>false</isPersisted>
-      <listDelimiter>,</listDelimiter>
-      <value></value>
-      <record>false</record>
-    </staticBinding>
-  </inputs>
+  <inputs/>
   <possibleResponses>
     <opResponse id="95803c76-9e7f-4268-b6fd-ce0f1caf03d3">
       <annotation></annotation>
@@ -29,7 +16,7 @@
       <isDefault>true</isDefault>
       <onFailure>false</onFailure>
       <type>RESOLVED</type>
-      <matchRules></matchRules>
+      <matchRules/>
     </opResponse>
     <opResponse id="85381f18-0a0c-4f87-b746-1f530ccf907d">
       <annotation></annotation>
@@ -37,7 +24,7 @@
       <isDefault>false</isDefault>
       <onFailure>true</onFailure>
       <type>ERROR</type>
-      <matchRules></matchRules>
+      <matchRules/>
     </opResponse>
     <opResponse id="7a5b3cef-7342-404b-a49c-a83ea29a21c9">
       <annotation></annotation>
@@ -45,7 +32,7 @@
       <isDefault>false</isDefault>
       <onFailure>false</onFailure>
       <type>DIAGNOSED</type>
-      <matchRules></matchRules>
+      <matchRules/>
     </opResponse>
     <opResponse id="faecb08a-fd51-4011-87a3-21a4604cedf5">
       <annotation></annotation>
@@ -53,7 +40,7 @@
       <isDefault>false</isDefault>
       <onFailure>false</onFailure>
       <type>NO_ACTION_TAKEN</type>
-      <matchRules></matchRules>
+      <matchRules/>
     </opResponse>
   </possibleResponses>
   <availableResultExpressions/>
@@ -116,10 +103,10 @@
       <checkPointStep>true</checkPointStep>
       <historyCheckPointStep>true</historyCheckPointStep>
       <scriptResultStep>false</scriptResultStep>
-      <userPrompt/>
+      <userPrompt></userPrompt>
       <bindings>
         <staticBinding id="17c48d4f-5742-451f-8da8-2ea2bd204b9b">
-          <annotation/>
+          <annotation></annotation>
           <fromContextKey>f1/f1.1/min</fromContextKey>
           <assignFromContext>true</assignFromContext>
           <assignToContext>false</assignToContext>
@@ -133,7 +120,7 @@
           <record>false</record>
         </staticBinding>
         <userInputBinding id="cfad8cf6-a608-4d6c-92de-061d8b844c06">
-          <annotation/>
+          <annotation></annotation>
           <assignFromContext>false</assignFromContext>
           <assignToContext>false</assignToContext>
           <inputType>STRING</inputType>
@@ -149,7 +136,7 @@
           <sourceDelimiter>,</sourceDelimiter>
         </userInputBinding>
         <staticBinding id="560099d2-cbce-4172-9854-026ef1b257f8">
-          <annotation/>
+          <annotation></annotation>
           <fromContextKey>f1/f1.1/max</fromContextKey>
           <assignFromContext>true</assignFromContext>
           <assignToContext>false</assignToContext>
@@ -165,7 +152,7 @@
       </bindings>
       <transitions>
         <transition id="c52fd848-e905-4145-b93f-7afdbce58c53">
-          <annotation/>
+          <annotation></annotation>
           <name>success</name>
           <command>NEXT</command>
           <linkMode>false</linkMode>
@@ -194,7 +181,7 @@
           </labelPosition>
         </transition>
         <transition id="a4006c7b-ab53-4050-a289-c7e774c8a3a4">
-          <annotation/>
+          <annotation></annotation>
           <name>failure</name>
           <command>NEXT</command>
           <linkMode>false</linkMode>
@@ -231,7 +218,7 @@
       <throttleSize>0</throttleSize>
     </step>
     <returnStep id="33764915-23e4-4347-8102-926e9d3d5c24">
-      <annotation/>
+      <annotation></annotation>
       <name>Resolved : success</name>
       <bounds>
         <x>277.0</x>
@@ -250,11 +237,11 @@
       <checkPointStep>true</checkPointStep>
       <historyCheckPointStep>true</historyCheckPointStep>
       <scriptResultStep>false</scriptResultStep>
-      <userPrompt/>
+      <userPrompt></userPrompt>
       <bindings/>
       <transitions>
         <transition id="7c071a91-cb05-4dcb-a349-7096f9fa71e2">
-          <annotation/>
+          <annotation></annotation>
           <name>return</name>
           <command>NEXT</command>
           <linkMode>false</linkMode>
@@ -275,7 +262,7 @@
       <assignments/>
     </returnStep>
     <returnStep id="e57aeb12-3d28-4cd3-9caf-c065d48c1049">
-      <annotation/>
+      <annotation></annotation>
       <name>Error : failure</name>
       <bounds>
         <x>57.0</x>
@@ -294,11 +281,11 @@
       <checkPointStep>true</checkPointStep>
       <historyCheckPointStep>true</historyCheckPointStep>
       <scriptResultStep>false</scriptResultStep>
-      <userPrompt/>
+      <userPrompt></userPrompt>
       <bindings/>
       <transitions>
         <transition id="721fbdd8-33cf-4e42-ae2f-36d87e7e6b3b">
-          <annotation/>
+          <annotation></annotation>
           <name>return</name>
           <command>NEXT</command>
           <linkMode>false</linkMode>
@@ -319,7 +306,7 @@
       <assignments/>
     </returnStep>
     <returnStep id="f0e7ed6d-a78b-4bae-b0f7-e7a8bb96cb7f">
-      <annotation/>
+      <annotation></annotation>
       <name>Diagnosed : diagnosed</name>
       <bounds>
         <x>235.0</x>
@@ -338,11 +325,11 @@
       <checkPointStep>true</checkPointStep>
       <historyCheckPointStep>true</historyCheckPointStep>
       <scriptResultStep>false</scriptResultStep>
-      <userPrompt/>
+      <userPrompt></userPrompt>
       <bindings/>
       <transitions>
         <transition id="d77b31bb-4f8e-47cc-90fb-d155c026ad5e">
-          <annotation/>
+          <annotation></annotation>
           <name>return</name>
           <command>NEXT</command>
           <linkMode>false</linkMode>
@@ -363,7 +350,7 @@
       <assignments/>
     </returnStep>
     <returnStep id="b42fa65b-9391-40bb-a3ae-3631a4a4668c">
-      <annotation/>
+      <annotation></annotation>
       <name>No Action Taken : unknown</name>
       <bounds>
         <x>272.0</x>
@@ -382,11 +369,11 @@
       <checkPointStep>true</checkPointStep>
       <historyCheckPointStep>true</historyCheckPointStep>
       <scriptResultStep>false</scriptResultStep>
-      <userPrompt/>
+      <userPrompt></userPrompt>
       <bindings/>
       <transitions>
         <transition id="9db062f0-167c-4747-84fc-4500ff05ad7a">
-          <annotation/>
+          <annotation></annotation>
           <name>return</name>
           <command>NEXT</command>
           <linkMode>false</linkMode>
